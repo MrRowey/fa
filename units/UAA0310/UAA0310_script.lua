@@ -122,7 +122,7 @@ UAA0310 = ClassUnit(AirTransport, ExternalFactoryComponent) {
     ---@param bpShield table
     CreateShield = function(self, bpShield)
         local bpShield = table.deepcopy(bpShield)
-        local trash = self.trash
+        local trash = self.Trash
         self:DestroyShield()
 
         self.MyShield = CzarShield(bpShield, self)

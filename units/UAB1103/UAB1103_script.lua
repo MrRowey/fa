@@ -22,11 +22,11 @@ UAB1103 = ClassUnit(AMassCollectionUnit) {
 
     PlayActiveAnimation = function(self)
         AMassCollectionUnit.PlayActiveAnimation(self)
-        local trash = self.trash
+        local trash = self.Trash
 
         if not self.AnimationManipulator then
             self.AnimationManipulator = CreateAnimator(self)
-            TrashBagAdd(trash,self.AnimationManipulator)
+            TrashBagAdd(trash, self.AnimationManipulator)
         end
         self.AnimationManipulator:PlayAnim(self.Blueprint.Display.AnimationActivate, true)
     end,
