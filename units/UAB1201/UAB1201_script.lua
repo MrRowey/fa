@@ -12,6 +12,7 @@ local AEnergyCreationUnit = import("/lua/aeonunits.lua").AEnergyCreationUnit
 -- upvalue for perfomance
 local CreateRotator = CreateRotator
 local TrashBagAdd = TrashBag.Add
+local Random = Random
 
 ---@class UAB1201 : AEnergyCreationUnit
 UAB1201 = ClassUnit(AEnergyCreationUnit) {

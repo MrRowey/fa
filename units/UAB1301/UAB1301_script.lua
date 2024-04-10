@@ -9,7 +9,6 @@
 --****************************************************************************
 local AEnergyCreationUnit = import("/lua/aeonunits.lua").AEnergyCreationUnit
 
--- upvale for perfomance
 local TrashBagAdd = TrashBag.Add
 
 ---@class UAB1301 : AEnergyCreationUnit
