@@ -19,6 +19,7 @@ UAB3104 = ClassUnit(ARadarUnit) {
 
     OnIntelDisabled = function(self, intel)
         ARadarUnit.OnIntelDisabled(self, intel)
+
         self.Rotator1:SetSpinDown(true)
         self.Rotator2:SetSpinDown(true)
         self.Rotator3:SetSpinDown(true)
@@ -34,7 +35,8 @@ UAB3104 = ClassUnit(ARadarUnit) {
 
         if not rotator1 then
             rotator1 = CreateRotator(self, 'B03', 'y')
-            TrashBagAdd(trash,rotator1)
+            TrashBagAdd(trash, rotator1)
+            self.Rotator1 = rotator1
         end
         rotator1:SetSpinDown(false)
         rotator1:SetTargetSpeed(30)
@@ -42,7 +44,8 @@ UAB3104 = ClassUnit(ARadarUnit) {
 
         if not rotator2 then
             rotator2 = CreateRotator(self, 'B02', 'y')
-            TrashBagAdd(trash,rotator2)
+            TrashBagAdd(trash, rotator2)
+            self.Rotator2 = rotator2
         end
         rotator2:SetSpinDown(false)
         rotator2:SetTargetSpeed(60)
@@ -50,7 +53,8 @@ UAB3104 = ClassUnit(ARadarUnit) {
 
         if not rotator3 then
             rotator3 = CreateRotator(self, 'B01', 'y')
-            TrashBagAdd(trash,rotator3)
+            TrashBagAdd(trash, rotator3)
+            self.Rotator3 = rotator3
         end
         rotator3:SetSpinDown(false)
         rotator3:SetTargetSpeed(120)
