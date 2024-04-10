@@ -18,7 +18,7 @@ UAB0303 = ClassUnit(ASeaFactoryUnit) {
         local trash = self.Trash
 
         self.BuildPointSlider = CreateSlider(self, bp.Display.BuildAttachBone or 0, -15, 0, 0, -1)
-        TrashBagAdd(trash,self.BuildPointSlider)
+        TrashBagAdd(trash, self.BuildPointSlider)
     end,
 }
 
