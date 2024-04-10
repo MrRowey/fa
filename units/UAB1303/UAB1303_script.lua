@@ -20,7 +20,7 @@ UAB1303 = ClassUnit(AMassFabricationUnit) {
         local trash = self.Trash
         self.RingManip1 = CreateRotator(self, 'B01', 'x', nil, 0, 15, 45)
         TrashBagAdd(trash, self.RingManip1)
-        self.RingManip2 = CreateRotator(self, 'B02', 'x', nil, 0, 15, -45)
+        self.RingManip2 = CreateRotator(self, 'B02', '-x', nil, 0, 15, 45)
         TrashBagAdd(trash, self.RingManip2)
         self.BallManip = CreateRotator(self, 'B03', 'y', nil, 0, 15, 80 + Random(0, 20) * num)
         TrashBagAdd(trash, self.BallManip)
