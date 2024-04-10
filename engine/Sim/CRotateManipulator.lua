@@ -41,7 +41,7 @@ end
 function CRotateManipulator:SetSpeed(degreesPerSecond)
 end
 
----
+--- When `true`, first decelerates to 2% target speed and then stops at 0 degrees
 ---@param spinDown boolean
 function CRotateManipulator:SetSpinDown(spinDown)
 end
